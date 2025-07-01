@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Tips</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/font-awesome.min2.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/featured-image-03.jpg');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">Back</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DARK CHOCOLATE HEALTH<span class="w3-hide-small"> BENEFITS </span>  
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <P>In theory, dark chocolate will contain higher flavanol content (greater health benefit). Milk chocolate contains much less, and white chocolate contains none. Dark chocolate is also a good source of soluble fiber, vitamins, and minerals (like iron, zinc, magnesium, etc.).
+    In addition, dark chocolate options are lower in sugar, making it less likely you’ll eat one right after another. To get the most “health benefit,” select dark chocolate (70-80% cocoa) with the least amount of added sugar.
+    “I think a key to long-term success with a healthy diet is to indulge on occasion – whether it’s a small dessert or a great piece of dark chocolate,” says registered dietitian Haley Dockrey.</P>
+    <h3 class="w3-center">Dark chocolate’s dark side</h3>
+    <p>There’s a flip side to the dark chocolate story. Consumer Reports featured a story in December 2022 that detailed reports of heavy metals found in several popular brands of dark chocolate. 
+        Our bodies naturally contain metals such as iron, copper, and zinc. While some metals provide essential benefits, too much of any of these metals can cause issues.
+        Heavy metals, such as cadmium and lead, were found in some dark chocolates. These metals can interrupt metabolic functions and the way our organs perform. Some chocolate bars in the study had levels of cadmium and lead that were considered harmful to our health.
+        If you eat chocolate on a daily basis, check out Consumer Reports’ list to see which ones you should choose. As noted in the article, many chocolate makers already produce chocolates with low levels of these metals.
+        “Again, our best bet is to enjoy our desserts in moderation,” Dockrey says. “In this scenario, stay informed by either going to a trusted source online, or meet with a registered dietitian who can help you navigate the many choices.”
+        <p>This blog was written by UC Davis Health registered dietitian Cathy Deimeke.</p></p>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <h6 class="copy-title"> Copyright &copy; 2023 oshana kavishan silva<a href="#" target="_blank"></a> </h6>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

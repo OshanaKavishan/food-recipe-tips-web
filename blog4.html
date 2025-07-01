@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Tips</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/font-awesome.min2.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/featured-image-04.jpg');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">Back</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">4 TIPS TO REDUCE<span class="w3-hide-small">  ADDED SUGAR </span>  
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <p>Most of us can relate to craving a sweet treat or soda to get through the day. These foods contain added sugars. An occasional treat is okay, but too much sugar can negatively impact our health.
+        In this blog, we offer some information and tips from UC Davis Health registered dietitians to reduce added sugars in your daily eating.</p>
+    
+        <h3 class="w3-center">What are added sugars?</h3>
+    <P>Added sugars are sugars, syrups, or nectars added to foods and beverages in the following ways:
+        used in food processing or preparation (such as sodas, cookies, cakes, and pastries)
+        added personally (examples: adding sugar to coffee or ordering a boba drink with a 100% sweetness level)</P>
+    
+        <h3 class="w3-center">How much added sugar is okay to have?</h3>
+    <P>The Dietary Guidelines for Americans 2020-2025 recommend limiting added sugars to less than 10% of total calories daily. In a 2000-calorie meal plan, this is no more than 200 calories or 12 teaspoons of sugar.
+
+        For some background, the average American eats about 270 calories of added sugars daily, which equals about 17 teaspoons.
+        
+        <p>Read more: How much sugar is too much?</p></P>
+    
+        <h3 class="w3-center">What are the top ways Americans consume added sugar?</h3>
+    <h5>1. Sugar-sweetened beverages, which include:</h5>
+    <P><ul type="square">
+        <li>Soft drinks</li>
+        <li>Fruit drinks</li>
+        <li>Sports and energy drinks</li>
+        <li>Sweetened coffees and teas</li>
+    </ul></P>
+
+    <h5>2. Desserts and sweet snacks, which include:</h5>
+    <P><ul type="square">
+        <li>Cookies</li>
+        <li>Brownies</li>
+        <li>Cakes</li>
+        <li>Ice cream</li>
+        <li>Cakes</li>
+        <li>Pies</li>
+        <li>Donuts</li>
+        <li>Pastries</li>
+    </ul></P>
+    
+    <h3 class="w3-center">Why should I be concerned about too much added sugar?</h3>
+    <P>Eating or drinking too much added sugar contributes to excessive calories with no vital nutrients. This can make it harder to maintain healthy eating habits.
+        Excessive calories are associated with health problems like weight gain, obesity, prediabetes, type 2 diabetes, and heart disease. Therefore, we should be mindful of added sugars and aim to limit these foods and beverages in our diet.</P>
+    
+        <h3 class="w3-center">4 tips to reduce added sugars in your eating habits</h3>
+    <P>Our dietitians have four tips to help you decrease added sugars in your meals. Even a slight change is one step closer to a healthier meal pattern.</P>
+    <p><h5>1. Find smart substitutions.</h5></p>
+    
+    <P>Replace soda and juice with healthier options like low-fat milk, carbonated water, or unsweetened iced tea. Water with some added flavoring from sliced lemons, cucumbers or mint is a great option, too.
+        Eat fruit for dessert instead of cake or cookies. Add some Greek yogurt for a creamy texture and more protein.</P>
+    
+    <p><h5>2. Replace food triggers with healthier options.</h5></p>
+    <p>Get moving with physical activities like walking or biking with family instead of going out for ice cream.
+        You can also replace a bowl of sugary snacks with fresh fruit, such as bananas, oranges or apples, at the table. These are easy to grab and snack on when you're on the go.</p>
+    
+    <p><h5>3. Be the food label expert.</h5></p>
+    <p>On the nutrition label for food that comes in a package, review the section labeled "added sugars." This shows the total amount of added sugars per serving. Look to buy food and beverages with zero or little added sugars.
+       <br> On the ingredients list, added sugars may be listed by several different names, including:
+       <ul type="square">
+        <li>Dextrose</li>
+        <li>Fructose</li>
+        <li>Glucose</li>
+        <li>Sucrose</li>
+        <li>Maltose</li>
+        <li>Honey</li>
+        <li>Molasses</li>
+        <li>Corn syrup</li>
+        <li>Malt syrup</li>
+        <li>High fructose corn syrup</li>
+        <li>Sugar/cane sugar</li>
+        <li>Fruit juice concentrates</li>
+        <li>Corn sweetener</li>
+        </ul>
+        If the added sugar ingredient is higher on the list, there is a higher amount of added sugar in the food item. Try to limit your intake of these foods.
+     </p>
+
+    <h5>4. Limit sweets and save them for a real treat.</h5>
+    <P>It's okay to treat yourself to a sweet item every so often. For example, treat yourself to an ice cream on a Saturday night. Think of it as a real treat for sticking to a healthier diet throughout the week.
+        You can also look to reduce the size of your soda or order a boba drink with a 50% sweetness level.</P>
+    <h3 class="w3-center">Bottom line: Stick to well-balanced eating habits</h3>
+    <P>To summarize, you should aim for a well-balanced meal plan while eating fewer items with added sugar. If you have any nutrition questions or concerns, you can check with a registered dietitian to help you develop specific nutrition goals that help you keep a healthy lifestyle.</P>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <h6 class="copy-title"> Copyright &copy; 2023 oshana kavishan silva<a href="#" target="_blank"></a> </h6>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

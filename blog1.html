@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Tips</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/font-awesome.min2.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/featured-image-01.jpg');
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">Back</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">4 TIPS<span class="w3-hide-small"> TO KEEP </span> YOUR FAMILY SAFE</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">1. Pack food safely</h3>
+  <p>When you're packing up food at home and preparing to take it to your outdoor gathering, make sure items are stored at the correct temperature. This is especially important for foods that are normally kept in the refrigerator or freezer.
+    Cold foods should be stored at 40°F or below to prevent bacterial growth, according to the U.S. Food and Drug Administration (FDA). Meat, poultry, and seafood can be packed while still frozen. This will help them stay colder longer.
+    It's best if you can pack your drinks in one cooler and perishable foods in another. That will help limit the number of times the cooler is opened, allowing food to stay colder longer.
+    Make sure to properly pack up leftovers, as well. Throw away or compost all perishable foods that have been left at room temperature for more than two hours (or one hour if the temperature is over 90°F).</p>
+  <h3 class="w3-center">2. Rinse your produce</h3>
+  <p>Before eating any fruits or vegetables, you should run them under clean water first. It's important to do this even for produce with skins and rinds that you don't eat, such as watermelon. Germs and bacteria on the peel or skin can get inside of fruit when you cut them.
+
+    Use your hand or vegetable brush to rub fruits and veggies with a firm skin under the water. There is no need to use soap.
+    
+    Packaged produce labeled "ready-to-eat" or any form of "washed" don't need to be washed before eating.</p>
+  <h3 class="w3-center">3. Wash your hands and avoid cross-contamination</h3>
+  <p>Make sure to wash your hands before handling any food. If you are working with raw meat, poultry, or seafood, wash your hands with soap and water after handling them.
+
+    Do not use the same utensils or plates that you've used with raw meat, poultry, or seafood unless they've been washed first. It's best to use hot, soapy water to sanitize these items. This is important because these raw food items can spread bacteria to food that's ready to eat.</p>
+  <h3 class="w3-center">4. Follow safe grilling tips</h3>  
+  <p>Many studies have shown that grilling can lead to a variety health concerns. Below are several things to be aware of:
+
+    Cook meat over a low flame which can lessen the amount of burning or charring of the meat. This can reduce potentially cancer-causing compounds.
+    Don't use a wire-bristle brush to clean your grill. Wire bristles can come off during cleaning and end up in your food. Use a stone grill cleaner instead.
+    Thaw meat in the refrigerator instead of at room temperature. Thawing meat at room temperature can lead to growth of dangerous bacteria.
+    Use a food thermometer to ensure your meats are cooked to a safe temperature. Red meat should cook to 145°F, ground meat to 160°F, and poultry to 165°F.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <h6 class="copy-title"> Copyright &copy; 2023 oshana kavishan silva<a href="#" target="_blank"></a> </h6>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

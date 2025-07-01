@@ -30,9 +30,8 @@ Originally created as a template, I customized it with cool features to make you
 ---
 
 ## 📸 Screenshots
-
-*(Add screenshots here)*  
-![App Screenshot](link-to-your-screenshot.png)
+ 
+![Home Page](/screenshot/home.png)
 
 ---
 

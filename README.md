@@ -29,6 +29,13 @@ Originally created as a template, I customized it with cool features to make you
 
 ---
 
+## 🌐 Live Demo
+
+🚀 Check out the live app here:  
+👉 [https://food-recipe-tips-web.vercel.app/](https://food-recipe-tips-web.vercel.app/)
+
+---
+
 ## 📸 Screenshots
  
 ![Home Page](/screenshot/home.png)
